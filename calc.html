@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #ecf0f1; /* Optional: Set a background color for the body */
+    }
+
+    form {
+      text-align: center;
+    }
+
+    input {
+      padding: 10px;
+      margin: 5px;
+    }
+
+    button {
+      padding: 10px;
+      margin: 5px;
+      background-color: #3498db; /* Blue */
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #2980b9; /* Darker Blue */
+    }
+  </style>
+</head>
+<body>
+  
+  <form>
+    <label for="username">height in cm:</label>
+    <input type="text" id="height" name="username">
+
+    <br>
+
+    <label for="password">weight in kg:</label>
+    <input type="text" id="weight" name="password">
+
+    <br>
+
+    <button type="submit">calculate</button>
+    <div class="blank"></div>
+    <h2>BMI weight guide</h2>
+    <p id="renge">under weight=less than 18.6</p>
+    <p id="renge">normal weight=less than 18.6 to 24.9</p>
+    <p id="renge">over weight=grater than 24.9</p>
+    
+  </form>
+ 
+ 
+  
+<script src="calc.js"></script>
+</body>
+</html>
